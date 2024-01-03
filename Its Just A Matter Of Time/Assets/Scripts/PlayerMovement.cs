@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
 
     //Main Movement Properties
     private float horizontal;
+    private bool isRunning = true;
     private float speed = 8f;
     private float jumpingPower = 16f;
     private bool isFacingRight = true;
@@ -42,7 +43,13 @@ public class PlayerMovement : MonoBehaviour
     private float dashingPower = 24f;
     private float dashingTime = 0.2f;
     private float dashingCooldown = 1f;
-    
+
+    //Ladder Properties
+    private float vertical;
+    private bool isLadder;
+    private bool isClimbing = false;
+    private GameObject currentLadder;
+
     //Fields Properties
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
@@ -66,8 +73,28 @@ public class PlayerMovement : MonoBehaviour
             animator.SetBool("isJumping2", false);
         }
         
-        horizontal = Input.GetAxisRaw("Horizontal");
-        animator.SetFloat("Speed", Mathf.Abs(horizontal));
+        if(isRunning == true)
+        {
+            horizontal = Input.GetAxisRaw("Horizontal");
+            animator.SetFloat("Speed", Mathf.Abs(horizontal));
+        }
+
+        if (isClimbing == true)
+        {
+            vertical = Input.GetAxis("Vertical");
+        }
+
+        if(isLadder == true && Input.GetKeyDown(KeyCode.E))
+        {
+            if (currentLadder != null)
+            {
+                isRunning = !isRunning;
+                isClimbing = !isClimbing;
+                animator.SetBool("isClimbing", isClimbing);
+                animator.SetBool("isJumping", false);
+                animator.SetBool("isJumping2", false);
+            }
+        }
 
         if(IsGrounded() || doubleJump)
         {
@@ -128,6 +155,17 @@ public class PlayerMovement : MonoBehaviour
         if(!isWallJumping)
         {
             rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
+        }
+
+        if(isClimbing)
+        {
+            rb.gravityScale = 0f;
+            rb.velocity = new Vector2(rb.velocity.x, vertical * speed);
+        }
+        else
+        {
+            rb.gravityScale = 4f;
+            animator.SetBool("isClimbing", false);
         }
     }
 
@@ -224,5 +262,27 @@ public class PlayerMovement : MonoBehaviour
         isDashing = false;
         yield return new WaitForSeconds(dashingCooldown);
         canDash = true;
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.CompareTag("Ladder"))
+        {
+            isLadder = true;
+            currentLadder = collision.gameObject;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if(collision.CompareTag("Ladder"))
+        {
+            if (collision.gameObject == currentLadder)
+            {
+                isLadder = false;
+                isClimbing = false;
+                isRunning = true;
+                currentLadder = null;
+            }
+        }
     }
 }
