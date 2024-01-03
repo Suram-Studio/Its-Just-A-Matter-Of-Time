@@ -60,7 +60,7 @@ public class PlayerMovement : MonoBehaviour
 
     //Controls
     private void Update()
-    {
+    {   
         if(isDashing)
         {
             return;
@@ -188,10 +188,12 @@ public class PlayerMovement : MonoBehaviour
         {
             isWallSliding = true;
             rb.velocity = new Vector2(rb.velocity.x, Mathf.Clamp(rb.velocity.y, -wallSlidingSpeed, float.MaxValue));
+            animator.SetBool("isWalled", true);
         }
         else
         {
             isWallSliding = false;
+            animator.SetBool("isWalled", false);
         }
     }
 
