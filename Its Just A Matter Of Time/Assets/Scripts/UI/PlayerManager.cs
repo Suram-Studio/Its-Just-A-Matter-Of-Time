@@ -5,29 +5,33 @@ using UnityEngine.SceneManagement;
 
 public class PlayerManager : MonoBehaviour
 {
+    private Animator animator;
     public static bool isGameOver;
     public GameObject gameOverScreen;
     public static bool isGamePaused;
     public GameObject gamePausedScreen;
+
+    [SerializeField] private Rigidbody2D rb;
 
     private void Awake()
     {
         isGameOver = false;
         isGamePaused = false;
     }
-
-    // Update is called once per frame
+    
     void Update()
     {
         if(isGameOver)
         {
+            isDead();
             gameOverScreen.SetActive(true);
+            HealthManager.health = 0;
+            Debug.Log("Game Over");
         }
 
         if(Input.GetButtonDown("Cancel") && !isGameOver)
         {
             isGamePaused = !isGamePaused;
-
         }
 
         if(isGamePaused)
@@ -43,12 +47,13 @@ public class PlayerManager : MonoBehaviour
             Debug.Log("Game Unpaused");
         }
     }
-
-    public void ReplayLevel()
+    
+    public void isDead()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        rb.bodyType = RigidbodyType2D.Static;
+        animator.SetTrigger("isDead");
     }
-
+    
     public void GoToMenu()
     {
         SceneManager.LoadScene("Menu");

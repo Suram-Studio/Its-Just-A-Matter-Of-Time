@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerCollision : MonoBehaviour
 {
@@ -10,12 +11,11 @@ public class PlayerCollision : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Hazard"))
         {
-            LifeManager.health--;
+            HealthManager.health--;
             Debug.Log("Is Hurt");
-            if(LifeManager.health <= 0)
+            if(HealthManager.health <= 0)
             {
                 PlayerManager.isGameOver = true;
-                gameObject.SetActive(false);
             }
             else
             {
@@ -31,5 +31,10 @@ public class PlayerCollision : MonoBehaviour
         yield return new WaitForSeconds(2);
         GetComponent<Animator>().SetLayerWeight(1, 0);
         Physics2D.IgnoreLayerCollision(8, 9, false);
+    }
+
+    public void RestartLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
