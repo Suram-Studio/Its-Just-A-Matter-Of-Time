@@ -26,7 +26,7 @@ public class PlayerMovement : MonoBehaviour
     private float wallJumpingDirection;
     private float wallJumpingTime = 0.2f;
     private float wallJumpingCounter;
-    private float wallJumpingDuration = 0.7f;
+    private float wallJumpingDuration = 0.3f;
     private Vector2 wallJumpingPower = new Vector2(8f, 16f);    
 
     //Coyote Time Properties
@@ -96,7 +96,7 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
-        if(IsGrounded() || doubleJump)
+        if(IsWalled() || IsGrounded() || doubleJump)
         {
             coyoteTimeCounter = coyoteTime;
         }
@@ -229,6 +229,11 @@ public class PlayerMovement : MonoBehaviour
         {
             isWallJumping = true;
             rb.velocity = new Vector2(wallJumpingDirection * wallJumpingPower.x, wallJumpingPower.y);
+
+            doubleJump = !doubleJump;
+
+            jumpBufferCounter = 0f;
+
             wallJumpingCounter = 0f;
 
             if(transform.localScale.x != wallJumpingDirection)

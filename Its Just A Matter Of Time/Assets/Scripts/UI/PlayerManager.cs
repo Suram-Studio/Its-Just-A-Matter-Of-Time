@@ -23,9 +23,10 @@ public class PlayerManager : MonoBehaviour
     {
         if(isGameOver)
         {
-            isDead();
             gameOverScreen.SetActive(true);
             HealthManager.health = 0;
+            rb.bodyType = RigidbodyType2D.Static;
+            animator.SetTrigger("isDead");
             Debug.Log("Game Over");
         }
 
@@ -37,21 +38,17 @@ public class PlayerManager : MonoBehaviour
         if(isGamePaused)
         {
             gamePausedScreen.SetActive(true);
+            rb.bodyType = RigidbodyType2D.Static;
             Time.timeScale = 0;
             Debug.Log("Game Paused");
         }
         else
         {
             gamePausedScreen.SetActive(false);
+            rb.bodyType = RigidbodyType2D.Dynamic;
             Time.timeScale = 1;
             Debug.Log("Game Unpaused");
         }
-    }
-    
-    public void isDead()
-    {
-        rb.bodyType = RigidbodyType2D.Static;
-        animator.SetTrigger("isDead");
     }
     
     public void GoToMenu()

@@ -5,6 +5,8 @@ using TMPro;
 
 public class Timer : MonoBehaviour
 {
+    public Animator animator;
+    
     [SerializeField] TextMeshProUGUI timerText;
     [SerializeField] float remainingTime;
 
@@ -23,7 +25,8 @@ public class Timer : MonoBehaviour
         {
             remainingTime = 0;
             PlayerManager.isGameOver = true;
-            GameObject.FindGameObjectWithTag("Player").SetActive(false);
+            GameObject.FindGameObjectWithTag("Player").SetActive(true);
+            animator.SetTrigger("isDead");
             timerText.color = Color.red;
         }
         int minutes = Mathf.FloorToInt(remainingTime / 60);

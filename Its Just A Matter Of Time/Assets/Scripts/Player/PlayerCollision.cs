@@ -16,6 +16,7 @@ public class PlayerCollision : MonoBehaviour
             if(HealthManager.health <= 0)
             {
                 PlayerManager.isGameOver = true;
+                animator.SetTrigger("isDead");
             }
             else
             {
