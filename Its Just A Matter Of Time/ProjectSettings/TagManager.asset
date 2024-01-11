@@ -8,6 +8,7 @@ TagManager:
   - Teleporter
   - OneWayPlatform
   - Hazard
+  - InstantDeath
   layers:
   - Default
   - TransparentFX

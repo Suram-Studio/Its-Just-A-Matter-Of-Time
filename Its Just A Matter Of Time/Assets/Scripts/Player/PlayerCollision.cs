@@ -15,12 +15,20 @@ public class PlayerCollision : MonoBehaviour
             Debug.Log("Is Hurt");
             if(HealthManager.health <= 0)
             {
-                PlayerManager.isGameOver = true;
-                animator.SetTrigger("isDead");
+                StartCoroutine(Dead());
             }
             else
             {
                 StartCoroutine(GetHurt());
+            }
+        }
+        if(collision.gameObject.CompareTag("InstantDeath"))
+        {
+            HealthManager.health = 0;
+            Debug.Log("Is Dead");
+            if(HealthManager.health <= 0)
+            {
+                StartCoroutine(Dead());
             }
         }
     }
@@ -37,5 +45,13 @@ public class PlayerCollision : MonoBehaviour
     public void RestartLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    private IEnumerator Dead()
+    {
+        PlayerManager.isGameOver = true;
+        animator.SetTrigger("isDead");
+        yield return new WaitForSeconds (1);
+        Time.timeScale = 0;
     }
 }
