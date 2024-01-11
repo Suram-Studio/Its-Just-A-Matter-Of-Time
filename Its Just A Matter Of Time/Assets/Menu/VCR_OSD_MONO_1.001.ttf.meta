@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8e52e07eecac60c42b58b697cbdc97d5
+guid: 0da7b1287d22bef47aed893f08ed8c04
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -9,7 +9,7 @@ TrueTypeFontImporter:
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - Milestone Free Version
+  - VCR OSD Mono
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0
