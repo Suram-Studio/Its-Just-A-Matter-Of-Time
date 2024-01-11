@@ -27,7 +27,6 @@ public class PlayerManager : MonoBehaviour
             HealthManager.health = 0;
             rb.bodyType = RigidbodyType2D.Static;
             animator.SetTrigger("isDead");
-            Time.timeScale = 0;
             Debug.Log("Game Over");
         }
 
