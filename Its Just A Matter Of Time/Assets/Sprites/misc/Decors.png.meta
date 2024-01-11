@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 045c41a1832d4594493c39e3985a72f3
+guid: 864f9934f07257d4ab584568d94e6914
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 28
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -73,19 +73,6 @@ TextureImporter:
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -123,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: main_character_jump_fixed-Sheet_0
+      name: Decors_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 256
-        height: 256
+        y: 84
+        width: 32
+        height: 28
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e7c9e199e8b3ee248a2aef5b369fa139
-      internalID: 884551811
+      spriteID: 274f47a936c3ddf4897a04b032a70fd7
+      internalID: -574909046
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_character_jump_fixed-Sheet_1
+      name: Decors_1
       rect:
         serializedVersion: 2
-        x: 256
-        y: 0
-        width: 256
-        height: 256
+        x: 32
+        y: 84
+        width: 32
+        height: 28
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,20 +145,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: da7a5dd0546cf5e449787b00598a6338
-      internalID: -1063801603
+      spriteID: 85049a692e66c8240a3fefa45f6c9e44
+      internalID: 613956927
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_character_jump_fixed-Sheet_2
+      name: Decors_2
       rect:
         serializedVersion: 2
-        x: 512
-        y: 0
-        width: 256
-        height: 256
+        x: 64
+        y: 84
+        width: 32
+        height: 28
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,20 +166,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 50a78650bfb22bb449180e47e4da8e68
-      internalID: 1910560096
+      spriteID: 459d4c653e880df4499cb8a192f72cca
+      internalID: 417675018
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_character_jump_fixed-Sheet_3
+      name: Decors_3
       rect:
         serializedVersion: 2
-        x: 768
-        y: 0
-        width: 256
-        height: 256
+        x: 0
+        y: 56
+        width: 32
+        height: 28
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +187,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f311c08450f52c24da1bb0a9364e0d93
-      internalID: -461322860
+      spriteID: f1fee3c044200b24785a7dcab9d1ba2a
+      internalID: -1799100185
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_character_jump_fixed-Sheet_4
+      name: Decors_4
       rect:
         serializedVersion: 2
-        x: 1024
-        y: 0
-        width: 256
-        height: 256
+        x: 32
+        y: 56
+        width: 32
+        height: 28
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -221,20 +208,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 32187ea6ea8f23141be6cbf4adcea846
-      internalID: 1199326030
+      spriteID: 61c84ae7d88b35545b3eee227dd80421
+      internalID: -818471539
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_character_jump_fixed-Sheet_5
+      name: Decors_5
       rect:
         serializedVersion: 2
-        x: 1280
-        y: 0
-        width: 256
-        height: 256
+        x: 64
+        y: 56
+        width: 32
+        height: 28
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -242,20 +229,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7863f19e107c1b6469e6007ff47e3485
-      internalID: -1245325189
+      spriteID: 7c712b29e38d42d4d9c2b22528ec2333
+      internalID: -706809650
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_character_jump_fixed-Sheet_6
+      name: Decors_6
       rect:
         serializedVersion: 2
-        x: 1536
-        y: 0
-        width: 256
-        height: 256
+        x: 0
+        y: 28
+        width: 32
+        height: 28
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -263,20 +250,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9d8d3c447843bc8478337bf624c2696c
-      internalID: -1286204613
+      spriteID: 89aac3a68044d864bb0943d6806f34dc
+      internalID: 1140503367
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_character_jump_fixed-Sheet_7
+      name: Decors_7
       rect:
         serializedVersion: 2
-        x: 1792
-        y: 0
-        width: 256
-        height: 256
+        x: 32
+        y: 28
+        width: 32
+        height: 28
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -284,20 +271,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 60581598ea75bc84d9d7bbbcbd2701b3
-      internalID: -1289588862
+      spriteID: 4fdf3cbf6bed4f64e8e173ad65d53440
+      internalID: -1940866430
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_character_jump_fixed-Sheet_8
+      name: Decors_8
       rect:
         serializedVersion: 2
-        x: 2048
-        y: 0
-        width: 256
-        height: 256
+        x: 64
+        y: 28
+        width: 32
+        height: 28
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -305,20 +292,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c28c8ef6ed3096640a9f646d103cb12a
-      internalID: 349874451
+      spriteID: b9ed3e8833de5ec44817885441df62da
+      internalID: -748079476
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_character_jump_fixed-Sheet_9
+      name: Decors_9
       rect:
         serializedVersion: 2
-        x: 2304
+        x: 32
         y: 0
-        width: 256
-        height: 256
+        width: 32
+        height: 28
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -326,20 +313,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 93d38a6199a8cbc49b316f5dfe08eb3d
-      internalID: -630942818
+      spriteID: 62114cefad0326d40acb3b9a1dcef75f
+      internalID: 648347109
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_character_jump_fixed-Sheet_10
+      name: Decors_10
       rect:
         serializedVersion: 2
-        x: 2560
+        x: 64
         y: 0
-        width: 256
-        height: 256
+        width: 32
+        height: 28
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -347,8 +334,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d08ddcca8288a924ca7609d523c0268e
-      internalID: -1652436705
+      spriteID: b8ffc64aed2b3e3429a968e3a91f0875
+      internalID: -681890855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Decors_11
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d66de0a9051426548a40f74a7a8f4f07
+      internalID: 1452933358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Decors_12
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 591e5f8443b8cec4a852b14f1020c89a
+      internalID: -1989573778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Decors_13
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1e3dd35d9e865445b2aa7a4d811dafc
+      internalID: 1425930479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Decors_14
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b11dacba004bdac4fafcc5aae0535565
+      internalID: 1412565314
       vertices: []
       indices: 
       edges: []
@@ -364,17 +435,21 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      main_character_jump_fixed-Sheet_0: 884551811
-      main_character_jump_fixed-Sheet_1: -1063801603
-      main_character_jump_fixed-Sheet_10: -1652436705
-      main_character_jump_fixed-Sheet_2: 1910560096
-      main_character_jump_fixed-Sheet_3: -461322860
-      main_character_jump_fixed-Sheet_4: 1199326030
-      main_character_jump_fixed-Sheet_5: -1245325189
-      main_character_jump_fixed-Sheet_6: -1286204613
-      main_character_jump_fixed-Sheet_7: -1289588862
-      main_character_jump_fixed-Sheet_8: 349874451
-      main_character_jump_fixed-Sheet_9: -630942818
+      Decors_0: -574909046
+      Decors_1: 613956927
+      Decors_10: -681890855
+      Decors_11: 1452933358
+      Decors_12: -1989573778
+      Decors_13: 1425930479
+      Decors_14: 1412565314
+      Decors_2: 417675018
+      Decors_3: -1799100185
+      Decors_4: -818471539
+      Decors_5: -706809650
+      Decors_6: 1140503367
+      Decors_7: -1940866430
+      Decors_8: -748079476
+      Decors_9: 648347109
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
