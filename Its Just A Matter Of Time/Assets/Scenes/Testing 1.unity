@@ -997,10 +997,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 93588690}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 207.21747, y: -50}
+  m_SizeDelta: {x: 320, y: 320}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &850964834
 MonoBehaviour:
@@ -1592,10 +1592,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 93588690}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 1415.6174, y: -50}
+  m_SizeDelta: {x: 320, y: 320}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1209793808
 MonoBehaviour:
@@ -2867,10 +2867,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 93588690}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 811.4175, y: -50}
+  m_SizeDelta: {x: 320, y: 320}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1877901553
 MonoBehaviour:
@@ -3603,6 +3603,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 2472988951207537971, guid: e89905853e2217548a53f14093efecac, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3138001626243924431, guid: e89905853e2217548a53f14093efecac, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -3639,6 +3643,10 @@ PrefabInstance:
       propertyPath: animator
       value: 
       objectReference: {fileID: 1334627084}
+    - target: {fileID: 8160073761583845970, guid: e89905853e2217548a53f14093efecac, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 6333827837882695237, guid: e89905853e2217548a53f14093efecac, type: 3}

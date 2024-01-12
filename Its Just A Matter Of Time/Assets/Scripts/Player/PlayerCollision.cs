@@ -51,7 +51,7 @@ public class PlayerCollision : MonoBehaviour
     {
         PlayerManager.isGameOver = true;
         animator.SetTrigger("isDead");
-        yield return new WaitForSeconds (1);
-        Time.timeScale = 0;
+        yield return new WaitForSeconds (3);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
